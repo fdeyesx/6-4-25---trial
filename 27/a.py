@@ -7,7 +7,7 @@ def distance(k1,k2):
         tx,ty = k1[i][0], k2[i][1]
         s = 0
         for j in range(len(k2)):
-            cx, cy = k2[i][0], k2[i][1]
+            cx, cy = k2[j][0], k2[j][1]
             s += d(tx,ty,cx,cy)
             if s < o:
                 krx = tx
@@ -29,3 +29,5 @@ x2,y2 = distance(ak2,ak1)
 
 print( (x1+x2)/2 * 10_000)
 print( (y1+y2)/2 * 10_000)
+
+
