@@ -4,7 +4,7 @@ def d(x1,y1,x2,y2):
 def distance(k1,k2,k3):
     o = 10**10
     for i in range(len(k1)):
-        tx,ty = k1[i][0], k2[i][1]
+        tx,ty = k1[i][0], k1[i][1]
         s = 0
         for j in range(len(k2)):
             for l in range(len(k3)):
@@ -18,7 +18,7 @@ def distance(k1,k2,k3):
                     o = s
     return [krx,kry]
 
-print('第一')
+print('第二')
 s = open('27B_1.txt').readlines()
 bk1,bk2,bk3 = [],[],[]
 for i in s:
@@ -35,5 +35,7 @@ x3,y3 = distance(bk3,bk1,bk2)
 
 print( (x1+x2+x3)/3 * 10_000)
 print( (y1+y2+y3)/3 * 10_000)
+
+
 
 
